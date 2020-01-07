@@ -27,6 +27,7 @@ npm-debug.log
 .awcache
 
 # Build Generated
+vendor/
 vendor/vendor.js
 vendor/vendor.map
 vendor/vendor-manifest.json
