@@ -1,0 +1,10 @@
+<div>
+  <ng-container
+    [ngTemplateOutlet]="tmpl"
+    [ngTemplateOutletContext]="ctx"
+  ></ng-container>
+
+  <template #tmpl let-name let-location="location">
+    {{ name }} : {{ location }}
+  </template>
+</div>
