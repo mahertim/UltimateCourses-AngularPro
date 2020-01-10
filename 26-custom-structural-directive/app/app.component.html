@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <li *myFor="let item of items; let i = index">
+      {{ i }} Member: {{ item.name | json }}
+    </li>
+  </ul>
+  <ul>
+    <template myFor [myForOf]="items" let-item let-i="index">
+      <li>{{ i }} Member: {{ item.name | json }}</li>
+    </template>
+  </ul>
+</div>
