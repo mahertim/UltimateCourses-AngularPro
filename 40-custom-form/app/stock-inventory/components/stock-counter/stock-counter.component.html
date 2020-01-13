@@ -1,0 +1,23 @@
+<div class="stock-counter">
+  <div>
+    <div>
+      <p>{{ value }}</p>
+      <div>
+        <button
+          type="button"
+          (click)="increment()"
+          [disabled]="value > max - step"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          (click)="decrement()"
+          [disabled]="value < min + step"
+        >
+          -
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
