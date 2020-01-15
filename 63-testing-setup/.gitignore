@@ -32,6 +32,3 @@ vendor/vendor.js
 vendor/vendor.map
 vendor/vendor-manifest.json
 vendor/webpack.config.js
-
-# Visual Studio
-.vscode/
