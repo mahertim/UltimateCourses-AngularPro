@@ -1,0 +1,13 @@
+<div class="songs-list">
+  <h3>
+    <ng-content></ng-content>
+  </h3>
+  <ul>
+    <li *ngFor="let song of list">
+      <p>{{ song.artist }}</p>
+      <span>{{ song.track }}</span>
+      <div class="songs-list__favorite" [class.active]="song.favorite"></div>
+      <div class="songs-list__listened" [class.active]="song.listened"></div>
+    </li>
+  </ul>
+</div>
